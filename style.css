@@ -13,22 +13,22 @@
 /* fonts variable */
 @font-face {
   font-family: "Oswald-Bold";
-  src: url(../fonts/Oswald-Bold.ttf);
+  src: url(Oswald-Bold.ttf);
 }
 
 @font-face {
   font-family: "PT-Sans-Bold";
-  src: url(../fonts/PT_Sans-Web-Bold.ttf);
+  src: url(PT_Sans-Web-Bold.ttf);
 }
 
 @font-face {
   font-family: "PT-Sans-Regular";
-  src: url(../fonts/PT_Sans-Web-Regular.ttf);
+  src: url(PT_Sans-Web-Regular.ttf);
 }
 
 @font-face {
   font-family: "PT-Sans-Italic";
-  src: url(../fonts/PT_Sans-Web-Italic.ttf);
+  src: url(PT_Sans-Web-Italic.ttf);
 }
 
 body {
