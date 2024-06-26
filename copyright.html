@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copyright Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url(assets/img/wp.jpg);
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+main p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Copyright Information</h1>
+        </header>
+        <main>
+            <p>© <span id="currentYear"></span> 2024 Nainesh Rana. All rights reserved.</p>
+            <p>All photographs and content on this website are the exclusive property of [Photographer's Name] and are protected by international copyright laws.
+
+                Unauthorized use, reproduction, or distribution of any images or content from this website without explicit written permission from [Photographer's Name] is strictly prohibited. This includes, but is not limited to, downloading, copying, reproducing, posting, or distributing any images.
+                
+                Commercial Use: For commercial use of any content on this website, including but not limited to advertising, marketing, and editorial purposes, prior written consent from [Photographer's Name] is required. Licensing options are available upon request.
+                
+                Personal Use: Personal use of the photographs is permitted under the following conditions:
+                
+                The images must not be altered, cropped, or modified in any way.
+                The photographer must be credited as rananainesh888@gmail.com with a link to this website where applicable.
+                The images must not be used for any commercial purposes or financial gain without explicit permission.
+                For any inquiries regarding permissions, licensing, or usage of my work, please contact me at rananainesh888@gmail.com
+
+                Thank you for respecting my work and understanding the effort that goes into creating these images.</p>
+            <p>For any permissions or usage inquiries, please contact <a href="mailto:rananainesh888@gmail.com">rananainesh888@gmail.com</a>.</p>
+        </main>
+        <footer>
+            <p><a href="index.html">Return to homepage</a></p>
+        </footer>
+    </div>
+    <script>
+        // scripts.js
+document.addEventListener('DOMContentLoaded', (event) => {
+    const yearElement = document.getElementById('currentYear');
+    const currentYear = new Date().getFullYear();
+    yearElement.textContent = currentYear;
+});
+
+    </script>
+</body>
+</html>

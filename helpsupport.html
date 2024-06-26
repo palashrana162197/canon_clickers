@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Support</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            background-image: url(assets/img/wp.jpg);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);         
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #333;
+        }
+
+        main h2 {
+            font-size: 22px;
+            color: #444;
+            margin-top: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .faq {
+            margin-top: 15px;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-top: none;
+            margin-top: -1px;
+        }
+
+        .faq-answer p {
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Help & Support</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq">
+                    <h3 class="faq-question">What services do you offer?</h3>
+                    <div class="faq-answer">
+                        <p>We offer a range of photography services including portrait, wedding, and commercial
+                            photography. You can find detailed descriptions of each service on our Services page.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <h3 class="faq-question">How can I book a session?</h3>
+                    <div class="faq-answer">
+                        <p>You can book a session by visiting our Booking page and selecting your preferred date and
+                            time. Alternatively, you can contact us directly at <a
+                                href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <h3 class="faq-question">What are your rates?</h3>
+                    <div class="faq-answer">
+                        <p>Our rates vary depending on the type of photography service you require. Please refer to our
+                            Pricing page for detailed information on our rates and packages.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <h3 class="faq-question">What is your cancellation policy?</h3>
+                    <div class="faq-answer">
+                        <p>You can cancel or reschedule your session up to 48 hours before the scheduled time without
+                            any charges. For cancellations within 48 hours, a cancellation fee may apply.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Contact Support</h2>
+                <p>If you have any other questions or need further assistance, please contact us:</p>
+                <ul>
+                    <li>Email: <a href="mailto:rananainesh888@gmail.com">rananainesh888@gmail.com</a></li>
+                    <li>Phone: (123) 456-7890</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p><a href="index.html">Return to homepage</a></p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const faqs = document.querySelectorAll('.faq-question');
+
+            faqs.forEach(faq => {
+                faq.addEventListener('click', () => {
+                    const answer = faq.nextElementSibling;
+
+                    if (answer.style.display === 'block') {
+                        answer.style.display = 'none';
+                    } else {
+                        answer.style.display = 'block';
+                    }
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
